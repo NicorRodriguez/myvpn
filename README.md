@@ -29,7 +29,8 @@ En caso de querer revocar permisos.
 	docker-compose run --rm openvpn ovpn_revokeclient $CLIENTNAME remove
 
 # Container duckdns
-Este contenedor fue creado para actualizar la ip dinamica.\n
+Este contenedor fue creado para actualizar la ip dinamica.
+
 Editar archivo ./duckdns/data/ipadjust.sh cambiar token y domain.
 
 Luego levantar el container
