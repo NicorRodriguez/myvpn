@@ -1,0 +1,8 @@
+version: '2.2'
+services:
+  duckdns:
+    build: .
+    container_name: duckdns
+    volumes:
+         - /home/production/duckdns/data:/home
+    restart: unless-stopped
