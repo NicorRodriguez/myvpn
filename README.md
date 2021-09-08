@@ -1,6 +1,6 @@
 # myvpn
 My personal vpn config on docker.
-
+# Container openvpn
 Inicializar la configuracion del servidor.
 
 	docker-compose run --rm openvpn ovpn_genconfig -u udp://<ip del servidor o dns>
@@ -27,3 +27,10 @@ En caso de querer revocar permisos.
 
 	docker-compose run --rm openvpn ovpn_revokeclient $CLIENTNAME
 	docker-compose run --rm openvpn ovpn_revokeclient $CLIENTNAME remove
+
+# Container duckdns
+Editar archivo ./duckdns/data/ipadjust.sh cambiar token y domain.
+
+Luego levantar el container
+
+	docker-compose up -d
